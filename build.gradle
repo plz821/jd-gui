@@ -119,6 +119,7 @@ launch4j {
     icon projectDir.path + '/src/launch4j/resources/images/jd-gui.ico'
     jar projectDir.path + '/' + proguard.outJarFiles[0]
     bundledJrePath = '%JAVA_HOME%'
+    jvmOptions = ['-Dfile.encoding=utf-8']
 }
 
 // Packages for Linux //
